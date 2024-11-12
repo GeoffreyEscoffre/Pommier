@@ -1,0 +1,469 @@
+/* Style de base et Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home-container{
+  margin-top: -5em;
+}
+
+#home-container p {
+  color: #45a049;
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(apples.webp);
+  background-size: 250%; /* Réduit la taille de l'image à 50% */
+  background-repeat: no-repeat; /* Évite que l'image se répète */
+  background-position: center; /* Centre l'image dans la page */
+}
+
+
+
+/* Conteneur principal */
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Style des boutons */
+button, .link-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover, .link-button:hover {
+  background-color: #45a049;
+}
+
+#quiz.container{
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  margin: 20px;
+}
+
+#quiz-container h1 {
+  font-size: 2.5em;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+#question-container {
+  margin: 1em;
+}
+#question-container h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#question-container h3{
+  text-align: center;
+  color: rgb(255, 115, 0);
+}
+
+
+/* Style des boutons de réponse */
+.choice-button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 2px solid #ccc;
+  padding: 10px 15px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.choice-button:hover {
+  background-color: #d9f1d3;
+}
+
+.choice-button.selected {
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #388E3C;
+}
+
+/* Style des boutons de navigation */
+#prev-button, #next-button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 15px 10px;
+  min-width: 100px;
+}
+
+#prev-button:hover, #next-button:hover {
+  background-color: #388E3C;
+}
+
+#quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Style des résultats */
+#quiz-container .results-container h2 {
+  color: #4CAF50;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+#quiz-container .results-container p {
+  font-size: 1.25em;
+  color: #555;
+  text-align: center;
+}
+
+#quiz-container .results-container ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#quiz-container .results-container ul li {
+  color: rgb(255, 115, 0);
+  font-size: 1em;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Lien vers la page d'accueil */
+.return-home {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.return-home:hover {
+  background-color: #388E3C;
+}
+.quiz-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Style des titres */
+h1, h2 {
+  text-align: center;
+  color: #388E3C;
+  margin-bottom: 15px;
+}
+h1 {
+  margin-top: -3em;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+/* Texte de description */
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+/* Conteneur des saisons en cercle responsive */
+.seasons-container {
+  position: relative;
+  width: 80vw;   /* Taille en fonction de la largeur de l'écran */
+  max-width: 500px; /* Taille maximale pour les écrans plus grands */
+  height: 80vw;
+  max-height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto;
+  border: 5px solid #007BFF;
+  background-image: url('pommier-saisons.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Quarts de saison */
+.season {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  line-height: 150px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+#spring { top: 0; left: 0; background-color: rgba(76, 175, 80, 0.4); }
+#summer { top: 0; right: 0; background-color: rgba(255, 152, 0, 0.4); }
+#autumn { bottom: 0; left: 0; background-color: rgba(255, 87, 34, 0.4); }
+#winter { bottom: 0; right: 0; background-color: rgba(33, 150, 243, 0.4); }
+
+#spring a,
+#summer a {
+  font-size: 2em;
+  margin-top: 2.5em;
+}
+
+.season:hover {
+  transform: scale(1.1);
+}
+
+/* Lien dans le quart de saison */
+.season a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.result-buttons {
+  display: flex;
+  flex-direction: column; /* Affiche les boutons en colonne */
+  align-items: center; /* Centre les boutons horizontalement */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.resolve-enigma, .return-home {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  height: 40px;
+  transition: background-color 0.3s;
+}
+
+.resolve-enigma:hover, .return-home:hover {
+  background-color: #388E3C;
+}
+
+
+
+/* Arrière-plans des pages d'accueil des saisons */
+body.printemps { background-color: #A8E6CF; background-image: url('pommier_printemps.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; }
+body.ete { background-color: #FFE5B4; background-image: url('pommier_ete.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; }
+body.automne { background-color: #FFDAB9; background-image: url('pommier_automne.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; }
+body.hiver { background-color: #B3E5FC; background-image: url('pommier_hiver.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; }
+
+/* Styles des liens des saisons */
+body.printemps .season-link { color: #4CAF50; 
+  font-size: 10vw; 
+                        text-decoration: none;
+                        background-color: rgba(255, 255, 172, 0.8);
+                        border-radius: 1em;
+                        padding: 0.2em;
+                        padding-inline: 0.5em;
+                        border: #4CAF50 solid 2px;
+                        font-weight: bold;}
+body.printemps .season-link:hover { color: #388E3C; transform: scale(1.1); }
+body.ete .season-link { color: #FF9800;
+                        font-size: 15vw; 
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                      
+body.ete .season-link:hover { color: #FF5722; transform: scale(1.1); }
+body.automne .season-link { color: #FF5722; 
+  font-size: 15vw; 
+  text-decoration: none;
+  font-weight: bold;
+}
+body.automne .season-link:hover { color: #E64A19; transform: scale(1.1); }
+body.hiver .season-link { color: #2196F3; font-size: 15vw; 
+  text-decoration: none;
+  font-weight: bold;}
+body.hiver .season-link:hover { color: #1565C0; transform: scale(1.1); }
+
+.automne div{
+  margin-top: 5em;
+  margin-right: 3em;
+}
+
+.hiver div {
+  margin-right: 10em;
+}
+
+#home-container p {
+  text-align: center;
+}
+
+#enigme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+#coffre {
+  margin: 20px 0;
+}
+
+#coffre img {
+  width: 200px;
+  height: auto;
+}
+
+input#code-input {
+  padding: 10px;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button#check-code-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#check-code-button:hover {
+  background-color: #388E3C;
+}
+
+/* Style de la modale */
+.modal {
+  display: none; /* Masquée par défaut */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 90%; /* Largeur de la modale pour petits écrans */
+  max-width: 400px; /* Limite de largeur sur les écrans plus grands */
+}
+
+.modal-content p {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#retry-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#retry-button:hover {
+  background-color: #388E3C;
+}
+
+#success-message {
+  font-size: 1.5em;
+  color: #4CAF50;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .seasons-container {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  #spring a,
+  #summer a {
+    font-size: 1em;
+    margin-top: -1em;
+  }
+  .season {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1024px) {
+  .seasons-container {
+    width: 400px;
+    height: 400px;
+  }
+}

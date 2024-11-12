@@ -1,0 +1,13 @@
+[
+  {
+    "question": " Qui a écrit 'Les Misérables'?",
+    "choices": ["Victor Hugo", "Emile Zola", "Albert Camus", "Jules Verne"],
+    "answer": "Victor Hugo"
+  },
+  {
+    "question": " Quel est le métal le plus léger?",
+    "choices": ["Aluminium", "Lithium", "Fer", "Plomb"],
+    "answer": "Lithium"
+  }
+
+]

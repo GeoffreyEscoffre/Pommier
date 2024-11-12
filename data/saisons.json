@@ -1,0 +1,22 @@
+{
+  "ete": {
+    "titre": "L'Été",
+    "description": "En été, le pommier est en pleine croissance et ses fruits mûrissent au soleil.",
+    "maisEncore": "Pour les plus curieux : en été, le pommier reçoit toute la lumière et la chaleur pour bien grandir."
+  },
+  "automne": {
+    "titre": "L'Automne",
+    "description": "En automne, le pommier perd ses feuilles et ses pommes sont prêtes pour la récolte.",
+    "maisEncore": "En automne, les pommes sont bien mûres et prêtes à être cueillies. Le pommier perd ses feuilles pour se préparer au froid de l'hiver."
+  },
+  "hiver": {
+    "titre": "L'Hiver",
+    "description": "En hiver, le pommier se repose sans feuilles pour économiser de l'énergie.",
+    "maisEncore": "Pendant l'hiver, le pommier semble endormi, mais il se prépare pour le printemps prochain."
+  },
+  "printemps": {
+    "titre": "Le Printemps",
+    "description": "Au printemps, le pommier fleurit et commence à produire de nouvelles feuilles.",
+    "maisEncore": "Avec le retour du soleil et de la chaleur, les fleurs du pommier attirent les abeilles qui aident à polliniser pour les futurs fruits."
+  }
+}

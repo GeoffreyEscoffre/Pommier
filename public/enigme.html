@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Résoudre l'énigme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="enigme-container">
+    <h1>Résoudre l'énigme</h1>
+    <p>Entrez le code pour ouvrir le coffre :</p>
+    <input type="text" id="code-input" placeholder="Entrez le code ici">
+    <button id="check-code-button">Vérifier</button>
+    <div id="coffre">
+      <div id="success-message" style="display: none;">Bravo ! Tu as réussi !</div>
+      <img id="coffre-image" src="coffre_ferme.webp" alt="Coffre fermé">
+    </div>
+    <a href="index.html" class="return-home">Retour à l'accueil</a>
+  </div>
+  <script src="enigme.js"></script>
+  <div id="error-modal" class="modal">
+    <div class="modal-content">
+      <p>Code incorrect, essayez encore.</p>
+      <button id="retry-button">Réessayer</button>
+    </div>
+  </div>  
+</body>
+</html>

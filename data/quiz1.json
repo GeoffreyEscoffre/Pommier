@@ -1,0 +1,23 @@
+[
+  {
+    "question": "Quelle est la capitale de la France?",
+    "choices": ["Paris", "Londres", "Rome", "Madrid"],
+    "answer": "Paris"
+  },
+  {
+    "question": "Quel est l'océan le plus grand?",
+    "choices": ["Pacifique", "Atlantique", "Indien", "Arctique"],
+    "answer": "Pacifique"
+  },
+  {
+    "question": "Dans quel continent se trouve la France?",
+    "choices": ["Océanie", "Amérique", "Europe", "Asie"],
+    "answer": "Europe"
+  },
+  {
+    "question": "A quelle saison le pommier fleurit et commence à produire des feuilles?",
+    "choices": ["Hiver", "Automne", "Eté", "Printemps"],
+    "answer": "Printemps"
+  }
+  
+]
