@@ -74,7 +74,7 @@ button:hover, .link-button:hover {
 
 #quiz-container h1 {
   font-size: 2.5em;
-  color: #4CAF50;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -192,16 +192,18 @@ button:hover, .link-button:hover {
   margin-top: 20px;
 }
 
+
 /* Style des titres */
 h1, h2 {
   text-align: center;
-  color: #388E3C;
+  color: #2196F3;
   margin-bottom: 15px;
 }
 h1 {
-  color: white;
+  color: #ffffff;
   margin-top: -3em;
   font-size: 2em;
+  text-shadow: #2196F3 1px 1px 6px ;
 }
 
 h2 {
@@ -213,7 +215,7 @@ p {
   font-size: 1em;
   line-height: 1.6;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #E64A19;
 }
 
 /* Conteneur des saisons en cercle responsive */
@@ -223,7 +225,7 @@ p {
   max-width: 500px; /* Taille maximale pour les écrans plus grands */
   height: 80vw;
   max-height: 500px;
-  border-radius: 50%;
+  border-radius: 35%;
   overflow: hidden;
   margin: 20px auto;
   background-image: url('pommier-saisons.webp');
@@ -302,49 +304,6 @@ p {
 
 
 
-/* Arrière-plans des pages d'accueil des saisons */
-body.printemps { background-color: #A8E6CF; background-image: url('pommier_printemps.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; }
-body.ete { background-color: #FFE5B4; background-image: url('pommier_ete.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; }
-body.automne { background-color: #FFDAB9; background-image: url('pommier_automne.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; }
-body.hiver { background-color: #B3E5FC; background-image: url('pommier_hiver.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; }
-
-/* Styles des liens des saisons */
-body.printemps .season-link { color: #4CAF50; 
-  font-size: 10vw; 
-                        text-decoration: none;
-                        background-color: rgba(255, 255, 172, 0.8);
-                        border-radius: 1em;
-                        padding: 0.2em;
-                        padding-inline: 0.5em;
-                        border: #4CAF50 solid 2px;
-                        font-weight: bold;}
-body.printemps .season-link:hover { color: #388E3C; transform: scale(1.1); }
-body.ete .season-link { color: #FF9800;
-                        font-size: 15vw; 
-                        text-decoration: none;
-                        font-weight: bold;
-                    }
-                      
-body.ete .season-link:hover { color: #FF5722; transform: scale(1.1); }
-body.automne .season-link { color: #FF5722; 
-  font-size: 15vw; 
-  text-decoration: none;
-  font-weight: bold;
-}
-body.automne .season-link:hover { color: #E64A19; transform: scale(1.1); }
-body.hiver .season-link { color: #2196F3; font-size: 15vw; 
-  text-decoration: none;
-  font-weight: bold;}
-body.hiver .season-link:hover { color: #1565C0; transform: scale(1.1); }
-
-.automne div{
-  margin-top: 5em;
-  margin-right: 3em;
-}
-
-.hiver div {
-  margin-right: 10em;
-}
 
 #home-container p {
   text-align: center;
@@ -453,6 +412,36 @@ body {
   background-color: #f9f9f9;
 }
 
+/* Appliquer un fond différent à chaque saison en fonction de la classe spécifique ajoutée au body */
+body.ete {
+  background-image: url('summer.webp');
+  background-size: 200%;
+  background-position: -18em;
+  background-position-y: 70% ;
+}
+
+body.automne {
+  background-image: url('autumn.webp');
+  background-size: 220%;
+  background-position: center;
+  background-position-y: 95% ;
+}
+
+body.hiver {
+  background-image: url('winter.webp');
+  background-size: 200%;
+  background-position: -10em; 
+  background-position-y: 95% ;
+}
+
+body.printemps {
+  background-image: url('spring.webp');
+  background-size: 220%;
+  background-position: -18em;
+  background-position-y: 99% ;
+}
+
+
 #season-container {
   max-width: 800px;
   margin: auto;
@@ -554,13 +543,13 @@ button:hover {
   #spring a,
   #summer a {
     font-size: 1em;
-    margin-top: 1em;
+    margin-top: 0.1em;
   }
 
   #winter a,
   #autumn a {
     font-size: 1em;
-    margin-top: -2em;
+    margin-top: -1.2em;
   }
   .season {
     font-size: 1.2em;

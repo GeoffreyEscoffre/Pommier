@@ -140,10 +140,8 @@ async function loadSeasonData() {
     // Remplir le titre avec le nom de la saison
     document.getElementById('titre-saison').innerText = saisonData.titre;
 
-    // Appliquer l'image de fond de la saison
-    document.body.style.backgroundImage = `url('${saisonData.image}')`;
-    document.body.style.backgroundSize = 'cover'; // Ajuste l'image pour couvrir tout l'écran
-    document.body.style.backgroundPosition = 'center'; // Centrer l'image
+    // Appliquer une classe spécifique pour la saison, ce qui permet de changer l'image de fond via CSS
+    document.body.classList.add(saison); // Ajoute une classe comme 'ete', 'automne', etc.
 
     // Créer dynamiquement les boutons pour les descriptions
     const buttonsContainer = document.getElementById('buttons-container');
@@ -189,6 +187,7 @@ async function loadSeasonData() {
     console.error("Erreur lors du chargement des données :", error);
   }
 }
+
 
 // Ouvrir la modale correspondante
 function openModal(number) {
