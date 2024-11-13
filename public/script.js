@@ -140,6 +140,11 @@ async function loadSeasonData() {
     // Remplir le titre avec le nom de la saison
     document.getElementById('titre-saison').innerText = saisonData.titre;
 
+    // Appliquer l'image de fond de la saison
+    document.body.style.backgroundImage = `url('${saisonData.image}')`;
+    document.body.style.backgroundSize = 'cover'; // Ajuste l'image pour couvrir tout l'écran
+    document.body.style.backgroundPosition = 'center'; // Centrer l'image
+
     // Créer dynamiquement les boutons pour les descriptions
     const buttonsContainer = document.getElementById('buttons-container');
     buttonsContainer.innerHTML = ''; // Réinitialiser le contenu des boutons

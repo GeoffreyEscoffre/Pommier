@@ -1,9 +1,10 @@
 {
   "ete": {
     "titre": "L'Été",
+    "image": "summer.webp",
     "descriptions": [
       {
-        "texte": "En été, le pommier est en pleine croissance et ses fruits mûrissent au soleil.fe ,kpjip rjep jrope j tiorpeq hjtoej trpoe ahjtipa ehtirpea hqtirpaq ehirh tiripe htriaphtpihripahpihtripe htiprehtirephteirph ti prehtiphertiperhtie htripe htjrpe jt rehip irhtp e hirpe hrie htripe hitrep hriep htjipr hirpe hripe htirep htriep thirpe htirpe tre jzep jzeipor hjepio hjozep hrjpzeh tiepzh tipez htipez htipzeh tipe htipzehi tepz htiehztiphizepthiezhtipzhtiezhiptheipzthgipzehipzhgtpzeh tiphfedipghoqgeugouzehg fohgroe zgto zegri zehgto",
+        "texte": "En été, le pommier est en pleine croissance et ses fruits mûrissent au soleil.",
         "maisEncore": "En été, le pommier reçoit toute la lumière et la chaleur pour bien grandir, ce qui favorise la photosynthèse et la maturation des fruits."
       },
       {
@@ -18,6 +19,7 @@
   },
   "automne": {
     "titre": "L'Automne",
+    "image": "autumn.webp",
     "descriptions": [
       {
         "texte": "En automne, le pommier perd ses feuilles et ses pommes sont prêtes pour la récolte.",
@@ -35,6 +37,7 @@
   },
   "hiver": {
     "titre": "L'Hiver",
+    "image": "winter.webp",
     "descriptions": [
       {
         "texte": "En hiver, le pommier se repose sans feuilles pour économiser de l'énergie.",
@@ -52,6 +55,7 @@
   },
   "printemps": {
     "titre": "Le Printemps",
+    "image": "spring.webp",
     "descriptions": [
       {
         "texte": "Au printemps, le pommier fleurit et commence à produire de nouvelles feuilles.",
