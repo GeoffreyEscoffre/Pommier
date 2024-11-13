@@ -445,6 +445,105 @@ button#check-code-button:hover {
   margin-bottom: 10px;
 }
 
+
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#season-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+#buttons-container button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  background-color: #5bc0de;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#buttons-container button:hover {
+  background-color: #31b0d5;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #5bc0de;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #31b0d5;
+}
+
+/* Style des modales */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Permet le défilement si le contenu est trop long */
+  max-height: 70vh; /* Limite la hauteur de la modale pour s'adapter aux petits écrans */
+  padding-right: 10px; /* Pour éviter que le texte touche les bords */
+  position: relative; /* Permet de positionner la croix à l'intérieur de la modale */
+}
+
+/* Style pour la croix de fermeture */
+.close-btn {
+  font-size: 24px;
+  color: white; /* Texte de la croix en blanc */
+  background-color: #5bc0de; /* Fond bleu similaire aux boutons */
+  border: none;
+  padding: 4px 10px; /* Un peu d'espace autour de la croix */
+  border-radius: 10%; /* Bordure arrondie pour un effet circulaire */
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Placer la croix un peu plus près du bord */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Effet de survol pour la croix */
+.close-btn:hover {
+  background-color: #31b0d5; /* Couleur plus foncée au survol */
+  color: white; /* Garde la couleur blanche au survol */
+}
+
+/* Modales plus détaillées */
+.modal-content p {
+  line-height: 1.5;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .seasons-container {

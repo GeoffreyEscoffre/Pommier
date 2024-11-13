@@ -9,52 +9,16 @@
 <body>
   <div id="season-container">
     <h1 id="titre-saison">Saison</h1>
-    <p id="description-saison">Description de la saison.</p>
 
-    <button onclick="showDetails()">Mais encore ?</button>
-    <div id="details" style="display: none;">
-      <p id="mais-encore-saison">Détails supplémentaires sur la saison.</p>
-    </div>
+    <!-- Conteneur pour afficher dynamiquement les boutons correspondant aux descriptions -->
+    <div id="buttons-container"></div>
 
     <button onclick="window.location.href='index.html'">Retour à la page d'accueil</button>
   </div>
 
-  <script>
-    async function loadSeasonData() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const saison = urlParams.get('saison');
+  <!-- Modales pour afficher dynamiquement les descriptions -->
+  <div id="modales-container"></div>
 
-      if (!saison) {
-        document.getElementById('titre-saison').innerText = "Saison non trouvée";
-        return;
-      }
-
-      try {
-        const response = await fetch('/api/saisons');
-        const data = await response.json();
-        const saisonData = data[saison];
-
-        if (saisonData) {
-          document.getElementById('titre-saison').innerText = saisonData.titre;
-          document.getElementById('description-saison').innerText = saisonData.description;
-          document.getElementById('mais-encore-saison').innerText = saisonData.maisEncore;
-        } else {
-          document.getElementById('titre-saison').innerText = "Saison non trouvée";
-        }
-      } catch (error) {
-        document.getElementById('titre-saison').innerText = "Erreur lors du chargement des données";
-      }
-    }
-
-    function showDetails() {
-      document.getElementById("details").style.display = "block";
-    }
-
-    const urlParams = new URLSearchParams(window.location.search);
-const saison = urlParams.get('saison');
-console.log("Saison sélectionnée :", saison); // Vérifie le paramètre
-
-    loadSeasonData();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

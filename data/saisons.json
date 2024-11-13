@@ -1,22 +1,70 @@
 {
   "ete": {
     "titre": "L'Été",
-    "description": "En été, le pommier est en pleine croissance et ses fruits mûrissent au soleil.",
-    "maisEncore": "Pour les plus curieux : en été, le pommier reçoit toute la lumière et la chaleur pour bien grandir."
+    "descriptions": [
+      {
+        "texte": "En été, le pommier est en pleine croissance et ses fruits mûrissent au soleil.fe ,kpjip rjep jrope j tiorpeq hjtoej trpoe ahjtipa ehtirpea hqtirpaq ehirh tiripe htriaphtpihripahpihtripe htiprehtirephteirph ti prehtiphertiperhtie htripe htjrpe jt rehip irhtp e hirpe hrie htripe hitrep hriep htjipr hirpe hripe htirep htriep thirpe htirpe tre jzep jzeipor hjepio hjozep hrjpzeh tiepzh tipez htipez htipzeh tipe htipzehi tepz htiehztiphizepthiezhtipzhtiezhiptheipzthgipzehipzhgtpzeh tiphfedipghoqgeugouzehg fohgroe zgto zegri zehgto",
+        "maisEncore": "En été, le pommier reçoit toute la lumière et la chaleur pour bien grandir, ce qui favorise la photosynthèse et la maturation des fruits."
+      },
+      {
+        "texte": "Les journées sont longues et chaudes, parfaites pour que le pommier se développe.",
+        "maisEncore": "Les journées d'été sont idéales pour la croissance des jeunes pousses et pour augmenter la taille des fruits avant la récolte."
+      },
+      {
+        "texte": "Le pommier produit de délicieux fruits rouges, sucrés et juteux sous la chaleur estivale.",
+        "maisEncore": "Les pommes récoltées en été sont particulièrement sucrées grâce à l'intensité du soleil et à la chaleur qui stimule la production de sucre dans les fruits."
+      }
+    ]
   },
   "automne": {
     "titre": "L'Automne",
-    "description": "En automne, le pommier perd ses feuilles et ses pommes sont prêtes pour la récolte.",
-    "maisEncore": "En automne, les pommes sont bien mûres et prêtes à être cueillies. Le pommier perd ses feuilles pour se préparer au froid de l'hiver."
+    "descriptions": [
+      {
+        "texte": "En automne, le pommier perd ses feuilles et ses pommes sont prêtes pour la récolte.",
+        "maisEncore": "L'automne est la période de la récolte des pommes. Les feuilles tombent pour économiser l'énergie avant l'hiver."
+      },
+      {
+        "texte": "Les couleurs de l'automne embellissent les pommiers, avec des fruits bien mûrs prêts à être cueillis.",
+        "maisEncore": "Les pommes changent de couleur en automne, prenant une teinte rouge ou jaune avant d'atteindre leur maturité parfaite."
+      },
+      {
+        "texte": "Le pommier se prépare à l'hiver en perdant ses feuilles et en stockant son énergie.",
+        "maisEncore": "Le pommier se prépare pour l'hiver en concentrant ses nutriments dans ses racines, pour survivre au froid."
+      }
+    ]
   },
   "hiver": {
     "titre": "L'Hiver",
-    "description": "En hiver, le pommier se repose sans feuilles pour économiser de l'énergie.",
-    "maisEncore": "Pendant l'hiver, le pommier semble endormi, mais il se prépare pour le printemps prochain."
+    "descriptions": [
+      {
+        "texte": "En hiver, le pommier se repose sans feuilles pour économiser de l'énergie.",
+        "maisEncore": "L'hibernation du pommier permet à l'arbre de conserver ses ressources pendant les mois froids, en attendant le printemps."
+      },
+      {
+        "texte": "Les températures froides ralentissent la croissance du pommier, mais il se prépare à l'arrivée du printemps.",
+        "maisEncore": "Pendant l'hiver, le pommier entre en dormance, suspendant sa croissance et se concentrant sur la préservation de ses réserves."
+      },
+      {
+        "texte": "Le pommier semble endormi pendant l'hiver, mais il se régénère pour la saison à venir.",
+        "maisEncore": "Bien qu'il semble inactif, le pommier se régénère en hiver, préparant ses bourgeons pour le retour du printemps."
+      }
+    ]
   },
   "printemps": {
     "titre": "Le Printemps",
-    "description": "Au printemps, le pommier fleurit et commence à produire de nouvelles feuilles.",
-    "maisEncore": "Avec le retour du soleil et de la chaleur, les fleurs du pommier attirent les abeilles qui aident à polliniser pour les futurs fruits."
+    "descriptions": [
+      {
+        "texte": "Au printemps, le pommier fleurit et commence à produire de nouvelles feuilles.",
+        "maisEncore": "Le printemps marque le début de la floraison et de la photosynthèse active, permettant au pommier de croître rapidement."
+      },
+      {
+        "texte": "Le pommier attire les abeilles pour la pollinisation, marquant le début de la production de fruits.",
+        "maisEncore": "Les abeilles pollinisent les fleurs du pommier, ce qui est essentiel pour la production des pommes futures."
+      },
+      {
+        "texte": "Les bourgeons du pommier s'épanouissent au printemps, annonçant une nouvelle saison de croissance.",
+        "maisEncore": "Les bourgeons s'ouvrent au printemps, signalant le début d'une nouvelle année de production de fruits et de croissance."
+      }
+    ]
   }
 }
