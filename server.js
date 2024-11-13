@@ -3,41 +3,50 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware pour servir les fichiers statiques
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Route pour servir le fichier saisons.json depuis le dossier data
+// Variables pour stocker les données JSON en mémoire
+let saisonsData;
+let quiz1Data;
+let quiz2Data;
+
+// Charger les fichiers JSON au démarrage de l'application
+try {
+  saisonsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'saisons.json'), 'utf8'));
+  quiz1Data = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'quiz1.json'), 'utf8'));
+  quiz2Data = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'quiz2.json'), 'utf8'));
+} catch (err) {
+  console.error("Erreur lors du chargement des fichiers JSON :", err);
+}
+
+// Route pour servir les données des saisons
 app.get('/api/saisons', (req, res) => {
-  fs.readFile(path.join(__dirname, 'data', 'saisons.json'), 'utf8', (err, data) => {
-    if (err) {
-      console.error("Erreur lors de la lecture du fichier saisons.json :", err);
-      res.status(500).send("Erreur interne du serveur");
-    } else {
-      res.json(JSON.parse(data));
-    }
-  });
+  if (saisonsData) {
+    res.json(saisonsData);
+  } else {
+    res.status(500).send("Erreur interne du serveur");
+  }
 });
 
 // Route pour récupérer les questions du Quiz 1
 app.get('/api/quiz1', (req, res) => {
-  fs.readFile('./data/quiz1.json', 'utf-8', (err, data) => {
-    if (err) {
-      return res.status(500).json({ error: 'Impossible de lire le fichier du Quiz 1' });
-    }
-    res.json(JSON.parse(data));
-  });
+  if (quiz1Data) {
+    res.json(quiz1Data);
+  } else {
+    res.status(500).json({ error: 'Impossible de récupérer les questions du Quiz 1' });
+  }
 });
 
 // Route pour récupérer les questions du Quiz 2
 app.get('/api/quiz2', (req, res) => {
-  fs.readFile('./data/quiz2.json', 'utf-8', (err, data) => {
-    if (err) {
-      return res.status(500).json({ error: 'Impossible de lire le fichier du Quiz 2' });
-    }
-    res.json(JSON.parse(data));
-  });
+  if (quiz2Data) {
+    res.json(quiz2Data);
+  } else {
+    res.status(500).json({ error: 'Impossible de récupérer les questions du Quiz 2' });
+  }
 });
 
 // Lancer le serveur

@@ -199,6 +199,7 @@ h1, h2 {
   margin-bottom: 15px;
 }
 h1 {
+  color: white;
   margin-top: -3em;
   font-size: 2em;
 }
@@ -225,7 +226,6 @@ p {
   border-radius: 50%;
   overflow: hidden;
   margin: 20px auto;
-  border: 5px solid #007BFF;
   background-image: url('pommier-saisons.webp');
   background-size: cover;
   background-position: center;
@@ -554,7 +554,13 @@ button:hover {
   #spring a,
   #summer a {
     font-size: 1em;
-    margin-top: -1em;
+    margin-top: 1em;
+  }
+
+  #winter a,
+  #autumn a {
+    font-size: 1em;
+    margin-top: -2em;
   }
   .season {
     font-size: 1.2em;
