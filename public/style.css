@@ -187,9 +187,10 @@ button:hover, .link-button:hover {
 }
 .quiz-buttons {
   display: flex;
+  padding-inline: 5em;
+  flex-direction: column;
   justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 
@@ -201,7 +202,7 @@ h1, h2 {
 }
 h1 {
   color: #ffffff;
-  margin-top: -3em;
+  margin-top: 1em;
   font-size: 2em;
   text-shadow: #2196F3 1px 1px 6px ;
 }
@@ -412,7 +413,7 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Appliquer un fond différent à chaque saison en fonction de la classe spécifique ajoutée au body */
+/* Ici tu peux modifier l'image de fond dans les pages contenant le descrptif des différentes*/
 body.ete {
   background-image: url('summer.webp');
   background-size: 200%;
@@ -448,16 +449,46 @@ body.printemps {
   text-align: center;
 }
 
-#buttons-container button {
-  padding: 10px;
-  font-size: 16px;
-  margin: 10px;
-  background-color: #5bc0de;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
+/* Disposition des boutons pour chaque saison */
+
+/* Par défaut, les boutons sont disposés en colonne et centrés */
+#buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
 }
+
+/* Pour l'été : disposition horizontale des boutons */
+body.ete #buttons-container {
+  flex-direction: row; /* Les boutons sont disposés horizontalement */
+  justify-content: space-around; /* Espacement égal entre les boutons */
+  padding: 10px;
+}
+
+/* Pour l'automne : disposition en colonne avec alignement à gauche */
+body.automne #buttons-container {
+  flex-direction: row; /* Les boutons sont disposés horizontalement */
+  justify-content: space-around; /* Espacement égal entre les boutons */
+  padding: 10px;
+}
+
+/* Pour l'hiver : disposition horizontale avec un fond léger */
+body.hiver #buttons-container {
+  flex-direction: row;
+  justify-content: space-evenly; /* Espacement égal entre les boutons */
+  padding: 20px;
+}
+
+/* Pour le printemps : disposition verticale avec un plus grand espacement */
+body.printemps #buttons-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espacement vertical plus large */
+  margin-top: 30px;
+}
+
 
 #buttons-container button:hover {
   background-color: #31b0d5;
