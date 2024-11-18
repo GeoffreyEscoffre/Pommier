@@ -148,7 +148,8 @@ async function loadSeasonData() {
     buttonsContainer.innerHTML = ''; // Réinitialiser le contenu des boutons
     saisonData.descriptions.forEach((description, index) => {
       const button = document.createElement('button');
-      button.innerText = `Description ${index + 1}`;
+      button.innerText = ``;
+      // `Description ${index + 1}`; exemple pour écrire sur les boutons
       button.onclick = () => openModal(index + 1);
       buttonsContainer.appendChild(button);
     });
@@ -177,7 +178,7 @@ async function loadSeasonData() {
       moreModal.innerHTML = `
         <div class="modal-content">
           <span class="close-btn" onclick="closeModal(${index + 1}, true)">×</span>
-          <h2>Mais encore ? (Description ${index + 1})</h2>
+          <h2>Mais encore ?</h2>
           <p id="mais-encore-${index + 1}">${description.maisEncore}</p>
         </div>
       `;

@@ -417,7 +417,7 @@ body {
 body.ete {
   background-image: url('summer.webp');
   background-size: 200%;
-  background-position: -18em;
+  background-position: -20em;
   background-position-y: 70% ;
 }
 
@@ -453,6 +453,7 @@ body.printemps {
 
 /* Par défaut, les boutons sont disposés en colonne et centrés */
 #buttons-container {
+  padding: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -476,15 +477,28 @@ body.automne #buttons-container {
 
 /* Pour l'hiver : disposition horizontale avec un fond léger */
 body.hiver #buttons-container {
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly; /* Espacement égal entre les boutons */
   padding: 20px;
+  text-align: end;
 }
+
+/* Pour déplacer un bouton individuellement */
+body.hiver #buttons-container button:first-child {
+margin-right: 10em;
+margin-top: -2em;
+}
+
+/* Exemple pour déplacer le 3ème bouton */
+body.hiver #buttons-container button:nth-child(3) {
+  margin-left: 10em;
+  margin-top: 5em;
+  }
 
 /* Pour le printemps : disposition verticale avec un plus grand espacement */
 body.printemps #buttons-container {
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: left;
   gap: 20px; /* Espacement vertical plus large */
   margin-top: 30px;
 }
@@ -502,7 +516,7 @@ button {
   border: none;
   color: white;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 button:hover {
